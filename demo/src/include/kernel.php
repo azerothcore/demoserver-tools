@@ -6,6 +6,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+
+require_once "conf/conf.php";
+require_once "ErrorHandler.php";
+
 $req = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 switch ($req) {
     case 'register':

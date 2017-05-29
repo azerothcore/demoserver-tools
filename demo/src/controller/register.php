@@ -26,8 +26,6 @@ if($response['success'] == false)
     ErrorHandler::raiseError("Recaptcha error, please retry!");
 }
 
-require_once "conf/conf.php";
-
 $mysqli = new mysqli(AC_HOST,AC_USER,AC_PASS);
 if ($mysqli->connect_error) {
     die('Connection error (' . $mysqli->connect_errno . ') '
