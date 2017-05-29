@@ -1,0 +1,21 @@
+.reg-form {
+    text-align: center;
+}
+
+.logo > img {
+    height: 30px;
+}
+
+.navbar-brand .logo {
+    float: left;
+}
+
+.navbar-brand .title {
+    float: left;
+    margin-left: 20px;
+}
+
+.g-recaptcha > div {
+    margin: 0 auto;
+}
+
