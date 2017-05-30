@@ -76,9 +76,7 @@ DELETE FROM `rbac_linked_permissions` WHERE `id` >= 100000 OR `linkedId` >= 1000
 DELETE FROM `rbac_permissions` WHERE `id` >= 100000;
 INSERT INTO `rbac_permissions` (`id`, `name`) VALUES
 ('100011', 'Role: Test Player'),
-('100013', 'Role: Test GM'),
-
-SET FOREIGN_KEY_CHECKS=1; -- re-enable foreign key check
+('100013', 'Role: Test GM');
 
 # Add default permissions
 # test
@@ -86,8 +84,6 @@ DELETE FROM `rbac_default_permissions` WHERE `permissionId` >= 100000;
 INSERT INTO `rbac_default_permissions` (`secId`, `permissionId`, `realmId`) VALUES ('0', '100012', -1);
 INSERT INTO `rbac_default_permissions` (`secId`, `permissionId`, `realmId`) VALUES ('0', '100011', -1);
 INSERT INTO `rbac_default_permissions` (`secId`, `permissionId`, `realmId`) VALUES ('0', '100013', -1);
-
-
 
 
 ### TEST SERVER ROLES ###
@@ -134,7 +130,6 @@ INSERT INTO `rbac_linked_permissions` VALUES (100011, 796);    # Command: instan
 # Special: test realm GM
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 193);     # inheriting from GM LVL 2
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 100011);  # inherit from test player
-INSERT INTO `rbac_linked_permissions` VALUES (100013, 100010);  # inherit from common GM interface
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 498);     # Command: damage
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 500);     # Command: die
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 795);     # Command: instance setbossstate
@@ -185,3 +180,6 @@ INSERT INTO `rbac_linked_permissions` VALUES (100013, 274);     # Command: chara
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 275);     # Command: character changefaction
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 276);     # Command: character changerace
 INSERT INTO `rbac_linked_permissions` VALUES (100013, 529);     # Command: unaura
+
+
+SET FOREIGN_KEY_CHECKS=1; -- re-enable foreign key check
