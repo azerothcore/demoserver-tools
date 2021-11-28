@@ -2,10 +2,11 @@
 -- GM commands for players
 -- 
 
-UPDATE command SET SECURITY=0 WHERE NAME='reload command';
+UPDATE command SET SECURITY=3 WHERE NAME='reload command';
 UPDATE command SET SECURITY=0 WHERE NAME='additem';
 UPDATE command SET SECURITY=3 WHERE NAME='character rename';
 UPDATE command SET SECURITY=0 WHERE NAME='character reputation';
+UPDATE command SET SECURITY=0 WHERE NAME='character level ';
 UPDATE command SET SECURITY=0 WHERE NAME='combatstop';
 UPDATE command SET SECURITY=0 WHERE NAME='commands';
 UPDATE command SET SECURITY=0 WHERE NAME='damage';
@@ -101,8 +102,7 @@ UPDATE command SET SECURITY=0 WHERE NAME='quest add';
 UPDATE command SET SECURITY=0 WHERE NAME='quest remove';
 UPDATE command SET SECURITY=0 WHERE NAME='quest';
 UPDATE command SET SECURITY=0 WHERE NAME='recall';
-UPDATE command SET SECURITY=0 WHERE NAME='reload command';
-UPDATE command SET SECURITY=0 WHERE NAME='reload creature_linked_respawn';
+UPDATE command SET SECURITY=3 WHERE NAME='reload creature_linked_respawn';
 UPDATE command SET SECURITY=0 WHERE NAME='lookup spell id';
 UPDATE command SET SECURITY=0 WHERE NAME='reload';
 UPDATE command SET SECURITY=0 WHERE NAME='repairitems';
@@ -113,9 +113,9 @@ UPDATE command SET SECURITY=0 WHERE NAME='server corpses';
 UPDATE command SET SECURITY=0 WHERE NAME='server info';
 UPDATE command SET SECURITY=0 WHERE NAME='server motd';
 UPDATE command SET SECURITY=0 WHERE NAME='unstuck';
-UPDATE command SET SECURITY=0 WHERE NAME='tele group';
-UPDATE command SET SECURITY=0 WHERE NAME='tele name';
-UPDATE command SET SECURITY=0 WHERE NAME='tele';
+UPDATE command SET SECURITY=0 WHERE NAME='teleport group';
+UPDATE command SET SECURITY=0 WHERE NAME='teleport name';
+UPDATE command SET SECURITY=0 WHERE NAME='teleport';
 UPDATE command SET SECURITY=0 WHERE NAME='unaura';
 UPDATE command SET SECURITY=0 WHERE NAME='unlearn';
 UPDATE command SET SECURITY=0 WHERE NAME='whispers';
@@ -152,3 +152,4 @@ UPDATE command SET SECURITY=0 WHERE NAME='account lock';
 UPDATE command SET SECURITY=0 WHERE NAME='cooldown';
 UPDATE command SET SECURITY=0 WHERE NAME='respawn';
 UPDATE command SET SECURITY=3 WHERE NAME='pinfo';
+
