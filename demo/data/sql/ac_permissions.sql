@@ -51,7 +51,7 @@ UPDATE command SET SECURITY=0 WHERE NAME='instance';
 UPDATE command SET SECURITY=0 WHERE NAME='itemmove';
 UPDATE command SET SECURITY=0 WHERE NAME='learn all lang';
 UPDATE command SET SECURITY=0 WHERE NAME='learn';
-UPDATE command SET SECURITY=0 WHERE NAME='modify scale';
+UPDATE command SET SECURITY=2 WHERE NAME='modify scale';
 UPDATE command SET SECURITY=0 WHERE NAME='levelup';
 UPDATE command SET SECURITY=0 WHERE NAME='list auras';
 UPDATE command SET SECURITY=0 WHERE NAME='list';
