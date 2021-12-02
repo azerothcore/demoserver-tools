@@ -152,4 +152,6 @@ UPDATE command SET SECURITY=0 WHERE NAME='account lock';
 UPDATE command SET SECURITY=0 WHERE NAME='cooldown';
 UPDATE command SET SECURITY=0 WHERE NAME='respawn';
 UPDATE command SET SECURITY=2 WHERE NAME='pinfo';
+UPDATE command SET SECURITY=0 WHERE NAME='learn all';
+UPDATE command SET SECURITY=0 WHERE NAME='learn all recipes';
 
