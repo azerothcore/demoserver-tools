@@ -154,4 +154,15 @@ UPDATE command SET SECURITY=0 WHERE NAME='respawn';
 UPDATE command SET SECURITY=2 WHERE NAME='pinfo';
 UPDATE command SET SECURITY=0 WHERE NAME='learn all';
 UPDATE command SET SECURITY=0 WHERE NAME='learn all recipes';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup teleport';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup taxinode';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup object';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup map';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup itemset';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup gobject';
+UPDATE command SET SECURITY=0 WHERE NAME='lookup creature';
+UPDATE command SET SECURITY=0 WHERE NAME='list creature';
+UPDATE command SET SECURITY=0 WHERE NAME='list item';
+UPDATE command SET SECURITY=0 WHERE NAME='list object';
+UPDATE command SET SECURITY=0 WHERE NAME='instance getbossstate';
 
